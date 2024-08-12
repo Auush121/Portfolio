@@ -1,0 +1,456 @@
+
+body {
+    font-family:'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+.project-list{
+    margin-top: 100px;
+}
+
+.projects h2{
+    font-size: 50px;
+    color: #333;
+}
+
+
+/* About Section */
+#about {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 50px;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.about-content-main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.about-content {
+    background-color: #ffffff;
+    border: 2px solid #616161;
+    border-radius: 10px;
+    padding:10px 20px;
+    width: 300px;
+    height: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.about-content h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-content p,
+.about-content ul {
+    font-size: 16px;
+    color: #555;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.about-content ul {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.about-content ul li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.about-content ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #3e3e3e;
+    font-size: 20px;
+    line-height: 1;
+}
+
+
+.home h1{
+    font-family:'Raleway', sans-serif;
+    font-size: 60px;
+    font-weight: 600;
+    color: #000;
+    padding: 0;
+    margin-top: 0 ;
+    margin-bottom: 0;
+    
+}
+
+.home-text{
+    height: 40%;
+}
+
+.home h2{
+    text-align: left;
+    margin-bottom: -10px;
+    font-size: 35px;
+    font-family: 'Raleway', sans-serif;
+    color: #000;
+    font-weight: 550;
+    padding: 0;
+}
+
+.home-elements{
+    display: flex;
+    gap: 30px;
+}
+
+.profile-img{
+    height:70%;
+    border-radius: 200px;
+    align-content:flex-start ;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+h1, h2, h3 {
+    color: #333;
+    text-align: center;
+}
+
+h1{
+    font-size: 30px;
+    font-family:'Raleway', sans-serif;
+    width: 100%;
+}
+
+p {
+    text-align: center;
+    font-size: 20px;
+    max-width: 800px;
+    margin: 10px auto;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+
+/* Navbar Styles */
+.navbar {
+    background-color: #FFF;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    border-radius: 4px;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.3);
+    display: flex; /* Use flexbox for alignment */
+    transition: border-bottom 0.3s ease; /* Smooth transition for border */
+    border-bottom: 2px solid transparent; /* Default state with no visible border */
+}
+
+/* Different border colors for different sections */
+.navbar.home-border {
+    border-bottom: 2px solid #007bff; /* Color for Home section */
+}
+
+.navbar.about-border {
+    border-bottom: 2px solid #007bff; /* Color for About section */
+}
+
+.navbar.projects-border {
+    border-bottom: 2px solid #007bff; /* Color for Projects section */
+}
+
+.navbar.contact-border {
+    border-bottom: 2px solid #007bff; /* Color for Contact section */
+}
+
+/* Remove any previously applied border color */
+.navbar.no-border {
+    border-bottom: 2px solid transparent; /* Ensure no border is visible */
+}
+
+
+
+.Logo{
+    display: inline;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Use flexbox for alignment */
+    cursor: pointer;
+}
+
+.logo-dot{
+    display: inline;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Use flexbox for alignment */
+    cursor: pointer;
+    color:#ff0000
+}
+
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+    display: flex; /* Use flexbox for alignment */
+}
+
+.navbar ul li {
+    display: inline;
+    margin-right: 35px;
+}
+
+.navbar ul li a {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #939393;
+    font-size: 20px;
+    font-weight: 550;
+    line-height: 2;
+    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/*-----------------------Project link----------------------*/
+.projects {
+    padding: 80px 20px;
+    background-color: #f9f9f9; /* Light grey background for contrast */
+    text-align: center;
+}
+
+.projects h2 {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 40px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.project-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px; /* Space between projects */
+}
+
+.project {
+    background-color: #fff;
+    border: 2px solid #ddd; /* Subtle border */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 20px;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.project:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.project h3 {
+    font-size: 24px;
+    color: #007bff;
+    margin-bottom: 15px;
+    font-family: 'Shantell Sans', sans-serif;
+    font-weight: 600;
+}
+
+.project p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.project-link {
+    display: inline-block;
+    font-size: 16px;
+    color: #007bff; /* Link color */
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid #007bff;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+
+.project-link:hover {
+    background-color: #007bff; /* Background color on hover */
+    color: white; /* Text color on hover */
+}
+
+/* Hover effect for links */
+.navbar ul li a:hover {
+    color: #ffc53c; /* Change text color on hover */
+}
+
+.Clr{
+    color: #88D66C;
+    display:inline;
+}
+
+/* Section Styles */
+section {
+    padding: 80px 20px;
+    height: 100vh;
+}
+
+.home {
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.about {
+    background: #f0f0f0;
+    font-size: 30px;
+    
+}
+
+.projects {
+    font-size: 30px;
+    background: #FFF;
+  
+}
+
+.contact {
+    font-size: 30px;
+    background: #f0f0f0;
+    height: 60vh;
+}
+
+/* Project List Styles */
+.project-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    min-height: 250px;
+    text-align: center;
+    
+}
+
+.project h3 {
+    margin-top: 0;
+    color: #007bff;
+}
+
+/* Footer Styles */
+.footer {
+    display: flex;
+    padding-bottom: 20px;
+    font-family: Geneva;
+    background: #FFF;
+    border-top: 2px solid #b1aeae;
+    color: #616161;
+    position:relative;
+    width: 100%;
+    bottom: 0;
+    max-width: 800px; /* Adjust this value as needed */
+    margin: 0 auto; 
+}
+
+.social-icons {
+    display: flex;
+    gap: 50px;
+}
+
+.social-icons a {
+    color: #939393;
+    font-size: 50px; /* Adjust size as needed */
+    text-decoration:overline;
+    transition: color 0.3s ease;
+    justify-content: center;
+}
+
+.social-icons a:hover {
+    color: #000; /* Change color on hover */
+}
+
+.icons{
+    display: flex;
+    margin-top: 120px;
+    justify-content: center; /* Centers content horizontally */
+}
+
+
+/*_______________________Animation for words_______________________-*/
+
+.animated-list {
+    list-style: none;
+    font-weight: 500;
+    color: #000;
+    margin: 0;
+    text-align: center;
+    height: 30px; /* Adjust based on the height of your text */
+    position: relative;
+}
+
+.animated-list li {
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    animation: showItem 15s linear infinite;
+    font-size: 40px;
+}
+
+.animated-list li:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.animated-list li:nth-child(2) {
+    animation-delay: 3s;
+}
+
+.animated-list li:nth-child(3) {
+    animation-delay: 6s;
+}
+
+.animated-list li:nth-child(4) {
+    animation-delay: 9s;
+}
+
+.animated-list li:nth-child(5) {
+    animation-delay: 12s;
+}
+
+@keyframes showItem {
+    0%, 19.99% { opacity: 1; }
+    20%, 100% { opacity: 0; }
+}
+
+
